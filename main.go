@@ -18,4 +18,10 @@ func main() {
 	fmt.Println(solar3k.Print())
 	fmt.Println(solar2k.Print())
 	fmt.Println(windwest.Print())
+
+	ss := []business.Solar{solar2k, solar3k}
+	business.PrintSlice[business.Solar](ss)
+
+	ps := []business.Wind{windwest}
+	business.PrintSlice[business.Wind](ps)
 }
